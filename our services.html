@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: transparent; /* Navy background */
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    color: goldenrod;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown a {
+    color: #000;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background: #f1f1f1;
+}
+
+/* Submenu (Second Level Dropdown) */
+.submenu-item {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu a {
+    padding: 10px;
+}
+
+/* Navbar Hover for Desktop */
+.menu-item:hover > .dropdown,
+.submenu-item:hover > .submenu {
+    display: block;
+}
+
+/* Show Dropdowns for Active Class (JavaScript Toggle for Mobile) */
+.menu-item.active > .dropdown,
+.submenu-item.active > .submenu {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu-link {
+        padding: 12px;
+        background: #004080;
+    }
+
+    .dropdown,
+    .submenu {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo 1.jpeg" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./corporate.html">Corporate Info</a></li>
+                <li class="nav-item"><a href="./project.html" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="./our services.html" class="nav-link">Services &#9662;</a>
+                <ul class="dropdown">
+                    <li class="submenu-item">
+                        <a href="./our services.html" class="submenu-link">BIM Services &#9656;</a>
+                        <ul class="submenu">
+                            <li><a href="#">BIM Development Services</a></li>
+                            <li><a href="#">BIM Consulting Services</a></li>
+                            <li><a href="#">Virtual Design & Construction (VDC)</a></li>
+                            <li><a href="#">BIM Technical Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Architecture Services</a></li>
+                    <li><a href="#">MEP Services</a></li>
+                    <li><a href="#">Structure Services</a></li>
+                    <li><a href="#">CAD Drafting Services</a></li>
+                    <li><a href="#">Visualization & Rendering</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+
+        <!-- Hero Section -->
+        <section>
+            <div class="heroo">
+                <div class="slideshow">
+                    <p>Combining creativity, technology, and strategy to shape the future.</p>
+                    <p>We deliver bold, user-centric designs tailored to diverse industries.
+                    Empowering businesses with innovative AI-driven solutions.</p>
+                    <p>1. Advenser - A comprehensive engineering service provider with expertise in architectural, MEP, and structural BIM modeling. They have a strong presence in both domestic and international markets, offering services like virtual design and construction, precast detailing, and facade engineering.
+    
+    
+                        2. Excelize - Specializes in BIM services, CAD services, and construction sequencing for offshore AEC businesses. Excelize is known for handling large-scale BIM projects and has significant experience in converting point cloud data into BIM models.
+                        
+                        
+                        3. Virtual Building Studio - Offers end-to-end customized BIM services covering planning, design, construction, and facility management. They have completed various projects across sectors such as residential, commercial, and industrial in markets like the USA, UK, and Australia.
+                        
+                        
+                        4. Revit Modeling India (RMI) - Focuses on BIM-related solutions including 3D BIM modeling, clash detection, 4D scheduling, and 5D cost estimation. Their clientele spans across residential, commercial, and healthcare industries, making them a notable player in the BIM sector.  (" I want to create a website for company with these 4 sector on my website") Build me a website </p>
+                </div>
+            </div>
+         </section>
+        
+        
+         
+    
+    
+    
+    
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We blend bold creativity, technical expertise, and user-centric design to deliver innovative solutions tailored to diverse industries.</p>
+        </section>
+    
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Architecture & Design</h3>
+                <p>Modern and organic solutions for the built environment.</p>
+            </div>
+            <div class="service">
+                <h3>AI & Deep Learning</h3>
+                <p>Custom AI-driven solutions to empower businesses with data intelligence.</p>
+            </div>
+            <div class="service">
+                <h3>IT Infrastructure</h3>
+                <p>Reliable and scalable IT solutions for seamless operations.</p>
+            </div>
+            <div class="service">
+                <h3>Creative Marketing</h3>
+                <p>Bold strategies to enhance brand visibility and engagement.</p>
+            </div>
+        </section>
+    
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Our Work</h2>
+            <div class="portfolio-item">
+                <h3>Client Success Stories</h3>
+                <p>Explore our portfolio of projects spanning IT, design, and marketing.</p>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Spandson Horizon Engineering Private Limited . All Rights Reserved.</p>
+        </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const submenuItems = document.querySelectorAll('.submenu-item');
+
+    // Toggle dropdown on click for menu items
+    menuItems.forEach(item => {
+        const link = item.querySelector('.menu-link');
+        const dropdown = item.querySelector('.dropdown');
+
+        if (dropdown) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Close other open dropdowns
+                menuItems.forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                    }
+                });
+
+                // Toggle current dropdown
+                item.classList.toggle('active');
+            });
+        }
+    });
+
+    // Toggle submenu on click for submenu items
+    submenuItems.forEach(item => {
+        const link = item.querySelector('.submenu-link');
+        const submenu = item.querySelector('.submenu');
+
+        if (submenu) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Close other open submenus
+                submenuItems.forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                    }
+                });
+
+                // Toggle current submenu
+                item.classList.toggle('active');
+            });
+        }
+    });
+
+    // Close menus if clicked outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.menu-item')) {
+            menuItems.forEach(item => item.classList.remove('active'));
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slideshow p");
+        let currentIndex = 0; // Track the current visible slide
+        const slideDuration = 3000; // Duration for each slide (in milliseconds)
+
+        // Initialize slides
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach((slide, i) => {
+                slide.style.opacity = "0";
+                slide.style.transform = "translateX(100%)"; // Move out of view
+            });
+
+            // Show the current slide
+            slides[index].style.opacity = "1";
+            slides[index].style.transform = "translateX(0)"; // Slide into view
+        }
+
+        // Auto-slide logic
+        function startSlideshow() {
+            setInterval(() => {
+                // Hide the current slide
+                slides[currentIndex].style.opacity = "0";
+                slides[currentIndex].style.transform = "translateX(-100%)"; // Slide out to the left
+
+                // Update to the next slide
+                currentIndex = (currentIndex + 1) % slides.length;
+
+                // Show the next slide
+                showSlide(currentIndex);
+            }, slideDuration);
+        }
+
+        // Start the slideshow
+        showSlide(currentIndex); // Show the first slide
+        startSlideshow();
+    });
+
+
+    
+       
+        const slideshow = document.querySelector(".slideshow");
+        let interval;
+
+        function startSlideshow() {
+            interval = setInterval(() => {
+                slides[currentIndex].style.opacity = "0";
+                slides[currentIndex].style.transform = "translateX(-100%)";
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }, slideDuration);
+        }
+
+
+        slideshow.addEventListener("mouseenter", () => clearInterval(interval));
+        slideshow.addEventListener("mouseleave", () => startSlideshow());
+
+</script>
+</body>
+</html>

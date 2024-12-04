@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandson's Horizon Engineering Limited</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/Vel-hindu-bold_inverted.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+.navbar a.nav-link {
+    color: white;
+}
+.navbar a.nav-link:hover {
+    color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/img/bim3.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #027092fd;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+}
+form button {
+    background: #027092fd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 576px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
+
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo 1.jpeg" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./corporate.html">Corporate Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="./project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./our services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>"Engineering the Future with Precision and Innovation."</h1>
+        <h2><span id="typed"></span></h2>
+        <p>Combining creativity, technology, and strategy to shape the future.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>About Us</h2>
+                <p>We blend bold creativity, technical expertise, and user-centric design to deliver innovative solutions tailored to diverse industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container" id="services">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Architecture & Design</h3>
+                <p>Modern and organic solutions for the built environment.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>AI & Deep Learning</h3>
+                <p>Custom AI-driven solutions to empower businesses with data intelligence.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>IT Infrastructure</h3>
+                <p>Reliable and scalable IT solutions for seamless operations.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Creative Marketing</h3>
+                <p>Bold strategies to enhance brand visibility and engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container" id="portfolio">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Our Work</h2>
+                <p>Explore our portfolio of projects spanning IT, design, and marketing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Spandson Horizon Engineering Private Limited. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

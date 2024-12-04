@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandson's Horizon Engineering Limited</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/Vel-hindu-bold_inverted.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Slideshow Container */
+.slideshow {
+    display: flex; /* Align slides horizontally */
+    transition: transform 1s ease-in-out; /* Smooth slide transition */
+    height: 100%;
+    width: 100%;
+}
+
+/* Individual Slide */
+.slide {
+    flex: 0 0 100%; /* Each slide takes 100% of the width */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Headings and Paragraphs */
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Buttons */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #027092fd;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #027092fd;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+#successMessage {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+<body>
+
+
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo 1.jpeg" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./corporate.html">Corporate Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="./project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./our services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="slideshow">
+            <!-- Slide 1 -->
+            <div class="slide" style="background-image: url('./assets/img/bim4.png');">
+                <h1>Innovative Solutions for Modern Challenges</h1>
+                <p>Combining creativity, technology, and strategy to shape the future.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('./assets/img/bim\ 5.png');">
+                <h1>Bold User-Centric Designs</h1>
+                <p>We deliver innovative designs tailored to diverse industries.</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('./assets/img/bim\ 6.png');">
+                <h1>Empowering Businesses</h1>
+                <p>AI-driven solutions to unlock data intelligence.</p>
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Please fill out the form below, and we will get back to you shortly.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone.no">phone.no</label>
+                    <input type="text" id="number" placeholder="Your phone.no" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="about-btn">Submit</button>
+            </form>
+        </div>
+        <div id="successMessage" class="hidden">Thank you for your message. We will get back to you soon!</div>
+    </section>
+
+
+    <script src="contact.js"></script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Spandson Horizon Engineering Private Limited . All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

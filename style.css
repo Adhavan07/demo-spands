@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(to right, #027092fd, #69c0cc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+
+        .heroo{
+            background-position: center;
+            padding: 12rem;
+            background-image: url(./assets/img/bim\ 3.jpg);
+        }
+
+        .slideshow p {
+            font-weight: bold;
+            font-size: large;
+            color: #027092fd;
+            margin: 0;
+            position: center;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    
+
+
+
+
+
+        
+
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-link {
+            color: rgb(204, 160, 49);
+        }
+        
+        .nav-link:hover {
+            color: gray;
+        }
+
+        .navbar{
+            background: transparent;
+
+        }
+
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-link {
+            color: rgb(204, 160, 49);
+        }
+        
+        
+        .hero {
+            padding: 50px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+        }
+        
+        .nav-item{
+            font-size: medium;
+            color: goldenrod;
+        }
+
+
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .service, .portfolio-item {
+            margin-bottom: 20px;
+        }
+        
+        /* Contact Form */
+        form input, form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        form button {
+            background: #0f4fc5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px auto;
+        }
+
+       
+        
+        .dropdown-menu {
+            display: none; /* Hidden by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 200px;
+            animation: fadeIn 0.3s ease-in-out; /* Smooth fade effect */
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .dropdown-menu a:hover {
+            background-color:#027092fd;
+        }
+        
+        /* Show the dropdown menu when hovering on the button or menu */
+        .menu-item:hover .dropdown-menu {
+            display: block;
+        }
+        
+        /* Optional animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
